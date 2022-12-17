@@ -18,7 +18,7 @@
 // }
 
 
-
+//this is a bit better, but lets return later to refactor
 function fizzbuzz(n)
 {
   let ar =[];
