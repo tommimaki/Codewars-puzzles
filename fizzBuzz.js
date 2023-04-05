@@ -1,37 +1,19 @@
-//Works but ugly Code, lets refactor
-// function fizzbuzz(n) {
-//   let ar = [];
-//   for (let i = 1; i <= n; i++) {
-    
-//     if (i % 3 === 0 && i % 5 === 0) {
-//       ar.push('fizzbuzz');
-//     } else if (i % 3 === 0) {
-//       ar.push("fizz");
-//     } else if (i % 5 === 0) {
-//       ar.push("buzz");
-//     }else{
-//       ar.push(i)
-//     }
-//   }
-//   console.log(ar);
-//   return ar;
-// }
+// Write a program that prints the numbers from 1 to
+// 100 and for multiples of ‘3’ print “Fizz” instead of
+// the number and for the multiples of ‘5’ print “Buzz”.
 
+function fizzbuzz() {
+  console.log("hi");
 
-//this is a bit better, but lets return later to refactor
-function fizzbuzz(n)
-{
-  let ar =[];
-  for(let i=1; i <= n; i++ ){
-  let oP =''
-  if(i%3==0) {oP += 'Fizz'}
-
-  if(i%5==0) {oP +='Buzz'}
-
-  if(oP== "") {oP = i}
-    ar.push(oP)
-    }
-  return ar
+  for (let i = 1; i < 100; i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
+      console.log("FizzBUZZ");
+    } else if (i % 3 == 0) {
+      console.log("Fizz");
+    } else if (i % 5 == 0) {
+      console.log("Buzz");
+    } else console.log(i);
+  }
 }
 
-console.log(fizzbuzz(15));
+fizzbuzz();
